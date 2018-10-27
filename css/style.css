@@ -22,7 +22,7 @@ nav a{
 .main{
   display: inline-block;
   float: left;
-  background-image: url('../img/img_2610.JPG');
+  background-image: url('../img/IMG_2610.JPG');
   background-size: cover;
 
 }
@@ -65,7 +65,7 @@ nav a{
 
 .contact{
   display: inline-block;
-  background-image: url('../img/boka_kontakt.JPG');
+  background-image: url('../img/boka_kontakt.jpg');
 }
 
 .contact a{
