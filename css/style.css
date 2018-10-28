@@ -14,15 +14,27 @@ nav{
   padding: 16px;
 }
 
-nav a{
+a{
   text-decoration: none;
+}
+
+nav a{
   color: white;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.ttf') format('truetype'),
+       url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+       url('../fonts/Montserrat-Light.ttf') format('truetype'),
+
 }
 
 .main{
   display: inline-block;
   float: left;
-  background-image: url('../img/IMG_2610.JPG');
+  background-image: url('../img/sara_bernmark_2.jpg');
   background-size: cover;
 
 }
@@ -37,13 +49,16 @@ nav a{
 .business-idea h1{
   color: white;
   text-align: left;
+  font-weight: bold;
+  /* line-height: 1.6; */
 
 }
 
 .business-idea p{
   color: white;
-  font-size: 10px;
   margin: 0;
+  line-height: 1.4;
+  font-weight: lighter;
 }
 
 .about{
@@ -58,29 +73,41 @@ nav a{
 
 .about p{
   color: #5E81A8;
-  font-size: 10px;
   margin: 0;
 }
 
 
 .contact{
   display: inline-block;
-  background-image: url('../img/boka_kontakt.jpg');
+  background-image: url('../img/contact_1.jpeg');
+  background-size: cover;
 }
 
 .contact a{
-  color: white;
+  color: #5E81A8;
   text-align: center;
   margin: 0;
+  font-weight: bolder;
 
+}
+.contact a:hover{
+  color:#3D5B7E;
 }
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
+  p{
+    font-size: 12px;
+  }
   h1{
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 16px;
   }
+  a{
+    font-size: 14px;
+
+  }
+
   .main, .content-wrapper{
     width: 100%;
     height: 50vh;
@@ -98,7 +125,7 @@ nav a{
     height: 50vh;
   }
   .content{
-    padding: 16px;
+    padding: 30px;
   }
   .about, .contact{
     height: 50%;
@@ -123,6 +150,18 @@ nav a{
 
 /* Larger screens */
 @media only screen and (min-width: 600px){/*992px) {*/
+  p{
+    font-size: 12px;
+  }
+  h1{
+    font-size: 20px;
+    margin-bottom: 16px;
+  }
+  a{
+    font-size: 20px;
+
+  }
+
   .main{
     width: 50%;
     height: 100vh;
@@ -136,6 +175,7 @@ nav a{
     position: absolute;
     top:50%;
     transform: translateY(-50%);
+    padding: 50px;
   }
 
   .about-wrapper{
@@ -154,5 +194,17 @@ nav a{
   .business-idea{
     height: 50%;
     position: relative;
+  }
+
+  .contact{
+    position: relative;
+  }
+
+  .contact a{
+    display: inline-table;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
