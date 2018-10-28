@@ -1,6 +1,5 @@
 body{
   font-family: 'Montserrat', sans-serif;
-  text-align: left;
   text-align: justify;
   hyphens: auto;
 }
@@ -23,41 +22,71 @@ nav a{
   font-weight: bold;
 }
 
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  color: #5E81A8;
+  text-align: center;
+  font-size: 8px;
+  display: table;
+}
+
+footer p{
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url('../fonts/Montserrat-Bold.ttf') format('truetype'),
        url('../fonts/Montserrat-Regular.ttf') format('truetype'),
        url('../fonts/Montserrat-Light.ttf') format('truetype'),
-
 }
+
+.text-border{
+  box-shadow: inset #5E81A8 0px -8px 0px -1px;
+  padding-right: 6px;
+  display: inline-block;
+}
+
+/* .text-border::before{
+  content: '';
+  width: 100%;
+  height: 5px;
+  background-color: cornflowerblue;
+  position: absolute;
+  left: 0;
+} */
 
 .main{
   display: inline-block;
   float: left;
-  background-image: url('../img/sara_bernmark_2.jpg');
+  background-image: url('../img/sara_bernmark_3.jpg');
   background-size: cover;
-
+  background-position: bottom;
 }
+
 .content-wrapper{
-  display: inline-block;
+  display: inline-table;
 }
 
 .business-idea{
-  background-color:#5E81A8;
+  background-color:#3D5B7E;
 }
 
 .business-idea h1{
   color: white;
   text-align: left;
   font-weight: bold;
-  /* line-height: 1.6; */
-
+  line-height: 1.6;
 }
 
 .business-idea p{
   color: white;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.6;
   font-weight: lighter;
 }
 
@@ -76,11 +105,11 @@ nav a{
   margin: 0;
 }
 
-
 .contact{
   display: inline-block;
   background-image: url('../img/contact_1.jpeg');
   background-size: cover;
+  background-position: bottom;
 }
 
 .contact a{
@@ -88,8 +117,8 @@ nav a{
   text-align: center;
   margin: 0;
   font-weight: bolder;
-
 }
+
 .contact a:hover{
   color:#3D5B7E;
 }
@@ -97,15 +126,16 @@ nav a{
 /* Small screens */
 @media only screen and (max-width: 600px) {
   p{
-    font-size: 12px;
+    font-size: 10px;
   }
+
   h1{
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 16px;
   }
+
   a{
     font-size: 14px;
-
   }
 
   .main, .content-wrapper{
@@ -117,23 +147,24 @@ nav a{
     height: 100%;
     display: inline-block;
   }
+
   .business-idea{
     float: right;
   }
-  .about-wrapper{
-    float: left;
-    height: 50vh;
-  }
+
   .content{
     padding: 30px;
   }
+
   .about, .contact{
     height: 50%;
     width: 100%;
   }
+
   .contact{
     position: relative;
   }
+
   .contact a{
     display: inline-table;
     position: absolute;
@@ -144,28 +175,29 @@ nav a{
 }
 
 /* Medium screens */
-@media only screen and (min-width: 600px), only screen and (max-width: 992px) {
-
+@media only screen and (min-width: 600px) and only screen and (max-width: 992px) {
 }
 
 /* Larger screens */
 @media only screen and (min-width: 600px){/*992px) {*/
   p{
-    font-size: 12px;
+    font-size: 14px;
   }
+
   h1{
     font-size: 20px;
     margin-bottom: 16px;
   }
+
   a{
     font-size: 20px;
-
   }
 
   .main{
     width: 50%;
     height: 100vh;
   }
+
   .content-wrapper{
     width: 50%;
     height: 100vh;
@@ -175,7 +207,7 @@ nav a{
     position: absolute;
     top:50%;
     transform: translateY(-50%);
-    padding: 50px;
+    padding: 4vw;
   }
 
   .about-wrapper{
